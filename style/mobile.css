@@ -1,1 +1,153 @@
-/*# sourceMappingURL=mobile.css.map */
+@media screen and (max-width: 1580px) {
+  .bannSection .bannBlock .text {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .title__name {
+    font-size: 48px;
+  }
+  section:not(.bannSection) {
+    padding: 70px 0;
+  }
+  .menu-open .info-block .item.list ul {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 1210px) {
+  .aboutSection .aboutBlock .info-block, .aboutSection .menuBlock .info-block, .aboutSection .deliveryBlock .info-block, .menuSection .aboutBlock .info-block, .menuSection .menuBlock .info-block, .menuSection .deliveryBlock .info-block, .deliverySection .aboutBlock .info-block, .deliverySection .menuBlock .info-block, .deliverySection .deliveryBlock .info-block {
+    padding-left: 0;
+  }
+  .menuSection .menuBlock .menu-list .item .img {
+    padding: 20px;
+  }
+  .bannSection .bannBlock .text {
+    font-size: 48px;
+  }
+  .contactSection .contactBlock .info-block .item .img {
+    height: 550px;
+    width: 120%;
+  }
+}
+@media screen and (max-width: 949px) {
+  main {
+    padding-left: 100px;
+  }
+  header .header .logo-burger .logo {
+    width: 60px;
+  }
+  .aboutSection .aboutBlock .info-block .item p, .aboutSection .menuBlock .info-block .item p, .aboutSection .deliveryBlock .info-block .item p, .menuSection .aboutBlock .info-block .item p, .menuSection .menuBlock .info-block .item p, .menuSection .deliveryBlock .info-block .item p, .deliverySection .aboutBlock .info-block .item p, .deliverySection .menuBlock .info-block .item p, .deliverySection .deliveryBlock .info-block .item p {
+    font-size: 16px;
+  }
+  .aboutSection .aboutBlock .info-block .item .title__name, .aboutSection .menuBlock .info-block .item .title__name, .aboutSection .deliveryBlock .info-block .item .title__name, .menuSection .aboutBlock .info-block .item .title__name, .menuSection .menuBlock .info-block .item .title__name, .menuSection .deliveryBlock .info-block .item .title__name, .deliverySection .aboutBlock .info-block .item .title__name, .deliverySection .menuBlock .info-block .item .title__name, .deliverySection .deliveryBlock .info-block .item .title__name {
+    margin-right: 0;
+    width: 100%;
+  }
+  .aboutSection .aboutBlock .info-block, .aboutSection .menuBlock .info-block, .aboutSection .deliveryBlock .info-block, .menuSection .aboutBlock .info-block, .menuSection .menuBlock .info-block, .menuSection .deliveryBlock .info-block, .deliverySection .aboutBlock .info-block, .deliverySection .menuBlock .info-block, .deliverySection .deliveryBlock .info-block {
+    grid-template-columns: 230px 1fr;
+  }
+  .bannSection .bannBlock .text {
+    padding-left: 100px;
+  }
+  section:not(.bannSection) {
+    padding: 60px 0;
+  }
+  footer .footer {
+    padding: 25px 0;
+  }
+  .contactSection .contactBlock .info-block .item .info {
+    padding: 30px;
+  }
+  .contactSection .contactBlock .info-block .item .img {
+    height: 300px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .title__block {
+    margin-bottom: 65px;
+  }
+  .contactSection .contactBlock .info-block .item .info {
+    position: initial;
+    transform: none;
+  }
+  .contactSection .contactBlock .info-block {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contactSection .contactBlock .info-block .item:first-of-type {
+    padding-right: 0;
+  }
+  .menuSection .menuBlock .menu-list {
+    padding-left: 120px;
+  }
+  .aboutSection .aboutBlock .info-block, .aboutSection .menuBlock .info-block, .aboutSection .deliveryBlock .info-block, .menuSection .aboutBlock .info-block, .menuSection .menuBlock .info-block, .menuSection .deliveryBlock .info-block, .deliverySection .aboutBlock .info-block, .deliverySection .menuBlock .info-block, .deliverySection .deliveryBlock .info-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bannSection .bannBlock {
+    margin: 0;
+  }
+  .bannSection .bannBlock .text {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 759px) {
+  .bannSection .bannBlock nav ul {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    justify-content: center;
+  }
+  main {
+    padding-left: 0;
+  }
+  header {
+    height: auto;
+    width: 100%;
+  }
+  header .header {
+    flex-direction: row;
+    padding: 15px 20px;
+  }
+  header .header .logo-burger {
+    flex-direction: row;
+  }
+  header .header .social ul {
+    flex-direction: row;
+  }
+  .container {
+    width: calc(100% - 40px);
+    padding: 0;
+  }
+  .bannSection .bannBlock .text {
+    padding-left: 0;
+  }
+  .deliverySection .deliveryBlock .info-block .item .btn-block {
+    margin-top: 40px;
+  }
+  .title__block {
+    margin-bottom: 45px;
+  }
+  .contactSection .contactBlock .info-block {
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .bannSection {
+    height: 80vh;
+  }
+  .bannSection .bannBlock {
+    padding: 30px 0 100px;
+  }
+  .menuSection .menuBlock .menu-list {
+    padding-left: 0;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .menuSection .menuBlock .menu-list {
+    padding-left: 0;
+  }
+  .bannSection .bannBlock {
+    margin: 0 20px;
+  }
+}/*# sourceMappingURL=mobile.css.map */

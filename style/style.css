@@ -13,6 +13,7 @@ a {
 
 header {
   position: fixed;
+  top: 0;
   height: 100vh;
   background-color: #333333;
   z-index: 50;
@@ -47,6 +48,7 @@ header .header .logo-burger .burger {
   flex-direction: column;
   gap: 7px;
   width: 35px;
+  cursor: pointer;
 }
 header .header .logo-burger .burger div {
   background-color: #B59571;
@@ -81,8 +83,9 @@ header ul {
 }
 
 .bannSection {
+  display: flex;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../img/bg.jpeg");
   background-size: cover;
   background-position: center;
@@ -90,7 +93,7 @@ header ul {
 }
 .bannSection .bannBlock {
   position: relative;
-  height: 100%;
+  height: auto;
   margin: 0 120px;
   padding: 30px 0 150px;
   display: flex;
@@ -320,6 +323,7 @@ header ul {
   font-size: 20px;
   font-weight: bold;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .btn-accent {
@@ -492,110 +496,298 @@ footer .footer .info-block span:nth-of-type(2) {
   text-align: right;
 }
 
-.deliveryHomeSection.container {
-  padding-top: 0;
+.navLkSection {
+  padding-top: 30px !important;
+  padding-bottom: 0 !important;
 }
-
-.title__delivery {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-.deliveryHomeSection li {
-  list-style: none;
-  font-size: 16px;
-}
-.deliveryHomeSection ul {
-  padding: 0;
-  margin: 0;
-}
-.deliveryHomeSection .deliveryHomeBlock .homePage {
-  padding: 30px 0 30px;
+.navLkSection .navLkBlock nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 10px;
 }
-.deliveryHomeSection .deliveryHomeBlock .homePage nav ul {
+
+.menuListSection .menuListBlock .category {
+  padding-bottom: 60px;
+}
+.menuListSection .menuListBlock .category ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
-  gap: 30px;
+  justify-content: space-evenly;
 }
-.deliveryHomeSection .deliveryHomeBlock .infoBlock {
-  padding: 30px 0 60px;
+.menuListSection .menuListBlock .product {
+  margin: 0 200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 130px;
 }
-.deliveryHomeSection .deliveryHomeBlock .infoBlock .list {
-  display: flex;
-  justify-content: center;
+.menuListSection .menuListBlock .product .gallery .img {
+  width: 100%;
+  height: 317px;
 }
-.deliveryHomeSection .deliveryHomeBlock .infoBlock .list a {
-  position: relative;
-}
-.deliveryHomeSection .deliveryHomeBlock .infoBlock .list a:hover:before {
-  opacity: 1;
-}
-.deliveryHomeSection .deliveryHomeBlock .infoBlock .list a:before {
-  position: absolute;
-  content: "";
-  top: 5px;
-  left: 0;
+.menuListSection .menuListBlock .product .gallery .img img {
   width: 100%;
   height: 100%;
-  border-bottom: 3px solid #B59571;
-  opacity: 0;
-  transition: all 0.3s;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.deliveryHomeSection .deliveryHomeBlock .infoBlock .list nav ul {
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
+.menuListSection .menuListBlock .product .gallery .swiper {
+  margin-top: 24px;
 }
-.deliveryHomeSection .deliveryHomeBlock .deliveryMenu {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  -moz-column-gap: 24px;
-       column-gap: 24px;
-  row-gap: 24px;
+.menuListSection .menuListBlock .product .gallery .swiper .swiper-wrapper .img {
+  height: 93px;
 }
-.deliveryHomeSection .deliveryHomeBlock .deliveryMenu .btn {
-  padding: 10px 20px;
-  font-size: 16px;
-}
-.deliveryHomeSection .deliveryHomeBlock .deliveryMenu .item {
-  width: 306px;
-  height: 404px;
+.menuListSection .menuListBlock .product .information {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid hsla(0, 0%, 20%, 0.2);
 }
-.deliveryHomeSection .deliveryHomeBlock .deliveryMenu .item .img {
-  height: 220px;
+.menuListSection .menuListBlock .product .information > .name {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 110%;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #333333;
+  margin-bottom: 35px;
 }
-.deliveryHomeSection .deliveryHomeBlock .deliveryMenu .item .img img {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+.menuListSection .menuListBlock .product .information .cost {
+  margin-bottom: 30px;
 }
-.deliveryHomeSection .deliveryHomeBlock .deliveryMenu .item .info {
-  padding: 30px;
+.menuListSection .menuListBlock .product .information .cost span:not(:first-of-type) {
+  opacity: 0.6;
 }
-.deliveryHomeSection .deliveryHomeBlock .deliveryMenu .item .info .items {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.deliveryHomeSection .deliveryHomeBlock .deliveryMenu .item .info .items .cost {
+.menuListSection .menuListBlock .product .information .cost span:first-of-type {
   font-size: 32px;
   font-weight: bold;
 }
-
-.footer.cards .info-block {
-  grid-template-columns: repeat(4, 1fr);
+.menuListSection .menuListBlock .product .information .quantity {
+  display: flex;
+  flex-direction: column;
 }
-.footer.cards .info-block .cards {
+.menuListSection .menuListBlock .product .information .quantity > span {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.menuListSection .menuListBlock .product .information .quantity .inCart {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 10px;
+  padding-bottom: 45px;
+  border-bottom: 1px solid #333333;
+  margin-bottom: 35px;
+}
+.menuListSection .menuListBlock .product .information .quantity .inCart input {
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  outline: none;
+  padding: 15px 25px;
+  width: 85px;
+}
+.menuListSection .menuListBlock .product .information .additionally {
+  display: flex;
+  flex-direction: column;
+}
+.menuListSection .menuListBlock .product .information .additionally > span {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.menuListSection .menuListBlock .product .information .additionally .functions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.menuListSection .menuListBlock .product .information .additionally .functions .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.menuListSection .menuListBlock .product .information .additionally .functions .item .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.menuListSection .menuListBlock .product .information .additionally .functions .item .info .name {
+  font-weight: bold;
+  opacity: 0.5;
+}
+.menuListSection .menuListBlock .product .information .additionally .functions .item .info .price {
+  font-weight: bold;
+  font-size: 20px;
+}
+.menuListSection .menuListBlock .info-block.listProduct {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, auto));
+  gap: 25px;
+}
+
+.swiper .swiper-wrapper {
+  max-width: 0;
+}
+.swiper .swiper-button-next, .swiper .swiper-button-prev {
+  color: #333333;
+}
+
+.modal#newOrderModal .modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  color: #ffffff;
+  padding: 60px;
+}
+.modal#newOrderModal .modal-body .logo {
+  width: 80px;
+  height: 100%;
+}
+.modal#newOrderModal .modal-body .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.modal#newOrderModal .modal-body span {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.modal#newOrderModal .modal-body .btn-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 30px;
+  color: #B59571;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+.modal#newOrderModal .modal-body form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+.modal#newOrderModal .modal-body form input {
+  padding: 15px 20px;
+  border: 1px solid #ffffff;
+  background-color: #333333;
+  outline: 0;
+  color: #ffffff;
+}
+.modal#newOrderModal .modal-body form .desc {
+  display: flex;
+  row-gap: 24px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.modal#newOrderModal .modal-body form .desc input {
+  width: calc(50% - 12px);
+}
+.modal#newOrderModal .modal-body form button {
+  margin: 10px auto 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+button {
+  border: 0;
+  outline: 0;
+}
+
+.menu-open {
+  display: flex;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  justify-content: center;
+  background-color: #333333;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow: hidden;
+  transition: width 0.3s;
+}
+.menu-open .info-block {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 100px 90px;
+  overflow-y: auto;
+  gap: 20px;
+}
+.menu-open .info-block .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.menu-open .info-block .item ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-open .info-block .item ul li {
+  color: #ffffff;
+}
+.menu-open .info-block .item ul li a {
+  color: #ffffff;
+}
+.menu-open .info-block .item.logo-close {
+  gap: 20px;
+}
+.menu-open .info-block .item.logo-close .logo {
+  width: 80px;
+}
+.menu-open .info-block .item.logo-close .btn-close {
+  color: #B59571;
+  opacity: 1;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
-  gap: 30px;
-  font-size: 25px;
+  align-items: center;
+  cursor: pointer;
+}
+.menu-open .info-block .item.logo-close .btn-close i {
+  font-size: 30px;
+}
+.menu-open .info-block .item.list ul {
+  gap: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.menu-open .info-block .item.list ul li {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+.menu-open .info-block .item.social ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 10px;
+}
+.menu-open .info-block .item.social ul li a {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.menu-open:not(.active) {
+  width: 0;
 }/*# sourceMappingURL=style.css.map */

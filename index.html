@@ -39,7 +39,7 @@
                         <li><a href="#">Меню</a></li>
                         <li><a href="#">Доставка</a></li>
                         <li><a href="#">Оплата</a></li>
-                        <li><a class="btn btn-accent">Бронь столика</a></li>
+                        <li><a class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#newOrderModal">Бронь столика</a></li>
                     </ul>                    
                 </nav>
                 <div class="text">Видовой ресторан Food Exxe Relo на Крестовском острове</div>
@@ -187,11 +187,63 @@
             </div>
         </div>
     </footer>
+
+    <div class="menu-open">
+        <div class="info-block">
+            <div class="item logo-close">
+                <div class="logo"><img src="img/logo.svg" alt="logo"></div>
+                <button type="button" class="btn-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="item list">
+                <ul>
+                <li><a href="#">Меню</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#newOrderModal">Бронь столика</a></li>
+                </ul>
+            </div>
+            <div class="item social">
+                <div>
+                    <ul>
+                        <li><a href="#"><img src="img/social/yt.svg" alt=""></a></li>
+                        <li><a href="#"><img src="img/social/vk.svg" alt=""></a></li>
+                        <li><a href="#"><img src="img/social/tg.svg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="newOrderModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <div class="logo">
+                    <img src="img/logo.svg" alt="">
+                </div>
+                <span>Забронировать столик</span>
+                <form action="">
+                    <input type="text" placeholder="Имя">
+                    <input type="phone" placeholder="Телефон" class="mask-phone">
+                    <div class="desc">
+                        <input type="number" placeholder="Гостей">
+                        <input type="time" placeholder="Время">
+                    </div>
+                    <button type="submit" class="btn btn-accent">Забронировать</button>
+                </form>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+          </div>
+        </div>
+    </div>
     
 
+
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="js/masks.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

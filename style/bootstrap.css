@@ -744,27 +744,27 @@ progress {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 760px) {
   .container-sm, .container {
     max-width: 540px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 950px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1210px) {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1140px;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1580px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1320px;
   }
@@ -5240,7 +5240,6 @@ textarea.form-control-lg {
 
 .btn-close {
   --bs-btn-close-color: #000;
-  --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
   --bs-btn-close-opacity: 0.5;
   --bs-btn-close-hover-opacity: 0.75;
   --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
@@ -5264,7 +5263,6 @@ textarea.form-control-lg {
 }
 .btn-close:focus {
   outline: 0;
-  box-shadow: var(--bs-btn-close-focus-shadow);
   opacity: var(--bs-btn-close-focus-opacity);
 }
 .btn-close:disabled, .btn-close.disabled {
@@ -5358,10 +5356,10 @@ textarea.form-control-lg {
   --bs-modal-padding: 1rem;
   --bs-modal-margin: 0.5rem;
   --bs-modal-color: ;
-  --bs-modal-bg: var(--bs-body-bg);
+  --bs-modal-bg: #333333;
   --bs-modal-border-color: var(--bs-border-color-translucent);
   --bs-modal-border-width: var(--bs-border-width);
-  --bs-modal-border-radius: var(--bs-border-radius-lg);
+  --bs-modal-border-radius: 0;
   --bs-modal-box-shadow: 0 0.125rem 0.25rem rgba(var(--bs-body-color-rgb), 0.075);
   --bs-modal-inner-border-radius: calc(var(--bs-border-radius-lg) - (var(--bs-border-width)));
   --bs-modal-header-padding-x: 1rem;
